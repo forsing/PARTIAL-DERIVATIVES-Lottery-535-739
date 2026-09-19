@@ -2,9 +2,9 @@ import csv
 import math
 from pathlib import Path
 
-CSV_PATH = Path("/Users/4c/Desktop/GHQ/data/loto7_4688_k75.csv")
-# CSV_PATH = Path("/Users/4c/Desktop/GHQ/data/loto7_4688_k75_loto_2966.csv")
-# CSV_PATH = Path("/Users/4c/Desktop/GHQ/data/loto7_4688_k75_loto_plus_1722.csv")
+CSV_PATH = Path("/data/loto7_4688_k75.csv")
+# CSV_PATH = Path("/data/loto7_4688_k75_loto_2966.csv")
+# CSV_PATH = Path("/data/loto7_4688_k75_loto_plus_1722.csv")
 
 SEED = 39
 LR = 0.1
@@ -168,7 +168,7 @@ if __name__ == "__main__":
 
 
 """
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4688_k75.csv
+CSV: /data/loto7_4688_k75.csv
 Učitano redova: 4688
 SEED=39 (konstanta, bez RNG), LR=0.1, STEPS=50
 Brojevi 7/39
@@ -177,13 +177,13 @@ Brojevi 7/39
   test učestalost: 1.2889
 
 next
-8,11,23,26,32,34,37
+8,x,23,y,32,z,37
 """
 
 
 
 """
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4688_k75_loto_2966.csv
+CSV: /data/loto7_4688_k75_loto_2966.csv
 Učitano redova: 2966
 SEED=39 (konstanta, bez RNG), LR=0.1, STEPS=50
 Brojevi 7/39
@@ -192,13 +192,13 @@ Brojevi 7/39
   test učestalost: 1.2104
 
 next
-8,21,22,23,26,33,35
+8,x,22,y,26,z,35
 """
 
 
 
 """
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4688_k75_loto_plus_1722.csv
+CSV: /data/loto7_4688_k75_loto_plus_1722.csv
 Učitano redova: 1722
 SEED=39 (konstanta, bez RNG), LR=0.1, STEPS=50
 Brojevi 7/39
@@ -207,7 +207,7 @@ Brojevi 7/39
   test učestalost: 1.2029
 
 next
-2,11,23,26,32,34,37
+2,x,23,y,32,z,37
 """
 
 
@@ -266,7 +266,7 @@ težine gradijentnim spustom
 odvojeno 5/35 i dopunski 1/10
 provera na kasnijim kolima vs učestalost
 
-next: 7,9,26,27,30,9
+next: 7,x,26,y,30,9
 
 Na testu: glavni 0.9474 vs 0.6842; dopunski 0.0789 vs 0.0526.
 
@@ -275,7 +275,7 @@ Na testu: glavni 0.9474 vs 0.6842; dopunski 0.0789 vs 0.0526.
 
 — isti spust (učestalost + razmak), 7/39, CSV, next.
 
-next: 8,11,23,26,32,34,37
+next: 8,x,23,y,32,z,37
 
 Test: gradijent 1.3060, učestalost 1.2889. 
 
