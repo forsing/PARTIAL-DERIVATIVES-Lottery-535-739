@@ -2,7 +2,7 @@ import csv
 import math
 from pathlib import Path
 
-CSV_PATH = Path("/Users/4c/Desktop/GHQ/data/loto5_187_k74.csv")
+CSV_PATH = Path("/data/loto5_187_k74.csv")
 SEED = 39
 LR = 0.1
 STEPS = 50
@@ -167,7 +167,7 @@ if __name__ == "__main__":
 
 
 """
-CSV: /Users/4c/Desktop/GHQ/data/loto5_187_k74.csv
+CSV: /data/loto5_187_k74.csv
 Učitano redova: 187
 SEED=39 (konstanta, bez RNG), LR=0.1, STEPS=50
 Glavni brojevi 5/35
@@ -180,7 +180,7 @@ Dopunski broj 1/10
   test učestalost: 0.0526
 
 next
-7,9,26,27,30,9
+7,x,26,y,30,9
 """
 
 
@@ -238,7 +238,7 @@ težine gradijentnim spustom
 odvojeno 5/35 i dopunski 1/10
 provera na kasnijim kolima vs učestalost
 
-next: 7,9,26,27,30,9
+next: 7,x,26,y,30,9
 
 Na testu: glavni 0.9474 vs 0.6842; dopunski 0.0789 vs 0.0526.
 
@@ -247,7 +247,7 @@ Na testu: glavni 0.9474 vs 0.6842; dopunski 0.0789 vs 0.0526.
 
 — isti spust (učestalost + razmak), 7/39, CSV, next.
 
-next: 8,11,23,26,32,34,37
+next: 8,x,23,y,32,z,37
 
 Test: gradijent 1.3060, učestalost 1.2889. 
 
